@@ -1,0 +1,36 @@
+{
+  "name": "data-list",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "style": "style.css",
+  "scripts": {
+    "bundle-example": "sheetify example/style.css > example/bundle.css",
+    "example": "budo example/index.js --dir example --live --onupdate 'npm run bundle-example'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/editdata/data-list.git"
+  },
+  "author": "sethvincent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/editdata/data-list/issues"
+  },
+  "homepage": "https://github.com/editdata/data-list#readme",
+  "dependencies": {
+    "base-element": "^3.0.1",
+    "data-editor": "github:editdata/data-editor",
+    "data-fields": "^2.0.0",
+    "extend": "^3.0.0",
+    "inherits": "^2.0.1",
+    "view-list": "^2.0.0"
+  },
+  "devDependencies": {
+    "budo": "^6.0.1",
+    "data-editor": "github:editdata/data-editor",
+    "data-form": "github:editdata/data-form",
+    "sheetify": "^2.0.3",
+    "virtual-raf": "^2.0.3"
+  }
+}
